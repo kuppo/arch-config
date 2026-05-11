@@ -3,8 +3,10 @@
 
 description: Base system configurations that are common to all hosts
 
+host: default
+
 packages:
-  # Essential base system
+  - Essential base system
   - base
   - base-devel
   - yay          # AUR helper (required for AUR package management
@@ -12,6 +14,7 @@ packages:
   - timeshift    # System backup tool (required for dcli backup commands)
   - arch-install-scripts
   - dcli-arch-git
+  - archlinuxcn-keyring
 
 update_hooks:
   pre_update: "scripts/common_prehook.sh"

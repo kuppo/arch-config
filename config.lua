@@ -9,9 +9,9 @@ local host_exists = dcli.file.is_file(dcli.env.config_dir() .. "/dcli/" .. host_
 
 local effective_host = hostname
 if not host_exists then
-	dcli.log.warn("No host config found for '" .. hostname .. "', ask user to specify one.")
-	print("Choose a host to configure: ")
-	effective_host = io.input()
+	dcli.log.warn("No host config found for '" .. hostname .. "', using default configuration")
+	dcli.log.warn("Create hosts/" .. hostname .. ".lua to customize for this system")
+	effective_host = "default"
 end
 
 return {

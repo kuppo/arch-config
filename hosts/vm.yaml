@@ -5,7 +5,7 @@ host: earth
 description: Legion laptop
 
 import:
-  - hosts/common/default.yaml
+  - hosts/default.yaml
 
 
 
