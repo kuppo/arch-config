@@ -1,0 +1,11 @@
+[user]
+email = swk-pl@163.com
+name = Peng Lei
+[core]
+editor = nvim
+compression = 9
+[init]
+defaultBranch = dev
+[alias]
+unstage = reset HEAD --
+last = log -1 HEAD
